@@ -1,0 +1,8 @@
+# Java class files
+*.class
+
+# Local configuration file (sdk path, etc)
+
+gen/*
+bin/*
+
