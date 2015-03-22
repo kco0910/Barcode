@@ -1,0 +1,8 @@
+1、 引入此工程必须在主工程Manifest中声明这个Activity
+com.mining.app.zxing.view.MipcaActivityCapture
+2、必须加入权限声明
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-feature android:name="android.hardware.camera" />
+<uses-feature android:name="android.hardware.camera.autofocus" />
