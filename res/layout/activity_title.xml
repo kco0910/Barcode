@@ -2,17 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/mmtitle_bg_alpha" >
+    android:background="#ff333333" >
 
     <Button
         android:id="@+id/button_back"
-        android:layout_width="75.0dip"
-        android:text="返回"
-        android:background="@drawable/mm_title_back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_back"
         android:textColor="@android:color/white"
-        android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="2dip" />
+        android:layout_marginLeft="10dp" />
 
     <TextView
         android:id="@+id/textview_title"

@@ -16,12 +16,9 @@ public final class R {
         public static int viewfinder_mask=0x7f050001;
     }
     public static final class drawable {
-        public static int ic_launcher=0x7f020000;
-        public static int mm_title_back_btn=0x7f020001;
-        public static int mm_title_back_focused=0x7f020002;
-        public static int mm_title_back_normal=0x7f020003;
-        public static int mm_title_back_pressed=0x7f020004;
-        public static int mmtitle_bg_alpha=0x7f020005;
+        public static int bg_title=0x7f020000;
+        public static int ic_back=0x7f020001;
+        public static int ic_launcher=0x7f020002;
     }
     public static final class id {
         public static int about_version_code=0x7f06000e;

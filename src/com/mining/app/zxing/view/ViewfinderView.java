@@ -131,7 +131,7 @@ public final class ViewfinderView extends View {
 
 	@Override
 	public void onDraw(Canvas canvas) {
-		//中间的扫描框，你要修改扫描框的大小，去CameraManager里面修改
+		//中间的扫描框，修改扫描框的大小，去CameraManager里面修改
 		Rect frame = CameraManager.get().getFramingRect();
 		if (frame == null) {
 			return;
@@ -191,7 +191,8 @@ public final class ViewfinderView extends View {
 			if(slideTop >= frame.bottom){
 				slideTop = frame.top;
 			}
-			canvas.drawRect(frame.left + MIDDLE_LINE_PADDING, slideTop - MIDDLE_LINE_WIDTH/2, frame.right - MIDDLE_LINE_PADDING,slideTop + MIDDLE_LINE_WIDTH/2, paint);
+			canvas.drawRect(frame.left + MIDDLE_LINE_PADDING, 
+					slideTop - MIDDLE_LINE_WIDTH/2, frame.right - MIDDLE_LINE_PADDING,slideTop + MIDDLE_LINE_WIDTH/2, paint);
 			
 			
 			//画扫描框下面的字
@@ -199,7 +200,8 @@ public final class ViewfinderView extends View {
 			paint.setTextSize(TEXT_SIZE * density);
 			paint.setAlpha(0x40);
 			paint.setTypeface(Typeface.create("System", Typeface.BOLD));
-			canvas.drawText(getResources().getString(R.string.scan_text), frame.left, (float) (frame.bottom + (float)TEXT_PADDING_TOP *density), paint);
+			canvas.drawText(getResources().getString(R.string.scan_text), 
+					frame.left-20, (float) (frame.bottom + (float)TEXT_PADDING_TOP *density), paint);
 			
 			
 
